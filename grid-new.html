@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50px 250px 1fr 1fr 220px;
+            grid-template-rows: 50px 200px 200px 200px 100px;
+            background-color: red;
+            gap:5px;
+            box-sizing: border-box;
+            /* width: 100%; */
+            /* height: 100vh; */
+        }
+
+        .items {
+            text-align: center;
+            align-content: center;
+            font-size: 1.3em;
+        }
+
+        #grid-item-1 {
+            /* grid-column: 1; */
+            grid-row: 2/6;
+            background-color: aqua;
+        }
+
+        #grid-item-2 {
+            grid-column: 1/6;
+            background-color: rgb(9, 212, 67);
+        }
+
+        #grid-item-3 {
+            grid-column: 2;
+            grid-row: 2/6;
+            background-color: rgb(114, 16, 183);
+        }
+
+        #grid-item-4 {
+            grid-row: 2/5;
+            grid-column: 3/5;
+            background-color: rgb(21, 196, 211);
+        }
+
+        #grid-item-5 {
+            grid-row: 2/6;
+            background-color: rgb(216, 83, 6);
+            background-repeat: no-repeat;
+        }
+        #grid-item-6{
+            grid-row:5;
+            grid-column:3/5;
+            background-color: rgb(115, 215, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="items" id="grid-item-1">Menu-bar</div>
+        <div class="items" id="grid-item-2">Header</div>
+        <div class="items" id="grid-item-3">Aside</div>
+        <div class="items" id="grid-item-4">Content</div>
+        <div class="items" id="grid-item-5">Side-Content</div>
+        <div class="items" id="grid-item-6">Footer</div>
+    </div>
+    
+</body>
+
+</html>
