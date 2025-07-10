@@ -9,7 +9,7 @@
         .navbar {
             display: flex;
             flex-wrap: wrap;
-            width: 90%;
+            width: 95%;
             height: 100vh;
             background-color: aqua;
             justify-content: center;
@@ -22,11 +22,9 @@
         .form-contanier {
             /* background-image: url(form-1-bg.jpg); */
             background-color: rgba(42, 40, 40, 0.721);
-            width: 350px;
+            width: 400px;
             height: auto;
             margin: 10px;
-            /* background-color: rgba(40, 39, 38, 0.504); */
-            height: auto;
             padding: 20px;
             border-radius: 5px;
             box-sizing: border-box;
@@ -40,8 +38,8 @@
 
         .form-contanier input[type=text],
         .form-contanier input[type=password] {
-            
-            opacity: 0.4;
+
+            opacity: 0.6;
             width: 90%;
             display: block;
             margin: 10px;
@@ -57,7 +55,7 @@
             width: 90%;
             border-radius: 5px;
             border: none;
-             opacity: 0.4;
+            opacity: 0.6;
         }
 
         .form-contanier select {
@@ -66,22 +64,26 @@
             padding: 15px;
             width: 100%;
             border-radius: 5px;
-             opacity: 0.4;
+            opacity: 0.6;
         }
+
         .form-contanier button {
-            width: 100%;
-            margin: 25px auto;
+
+            /* justify-content: center; */
+            width: 30%;
+            margin: 20px auto;
             padding: 10px;
             background-color: rgb(57, 243, 1);
-            font-size: 1.2em;
+            font-size: 1em;
             color: white;
             border-radius: 10px;
         }
 
         option {
             background-color: rgba(0, 0, 0, 0.364);
-            opacity: 0.4;
+            opacity: 0.6;
         }
+       
     </style>
 </head>
 
@@ -94,7 +96,7 @@
             <input type="password" id="password" placeholder="Enter your password">
             <label for="message">Message:</label>
             <textarea name="message" id="message" placeholder="Enter Your Comment"></textarea>
-            <label for="cites">Choose Cites:</label>
+            <label for="cites">Choose City:</label>
             <select name="cites" id="cites">
                 <option value="Select city">Select city</option>
                 <option value="Chennai">Chennai</option>
@@ -103,7 +105,9 @@
                 <option value="Panruti">Panruti</option>
             </select>
             <button type="button">Login</button>
+            <button type="reset">Reset</button>
         </form>
     </nav>
 </body>
+
 </html>
