@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <style>
+        #grid-contanier{
+            display: grid;
+            grid:30% 30% 30% 10% / 100px 200px 1fr 1fr;
+            height: 500px;
+        } 
+         #grid-items1{
+            grid-column:1/5;
+            background: linear-gradient(to right, #ff0000, #0000ff, #00ff00);
+         }
+         #grid-items2{
+            grid-row:2/5;
+            background-color: #00ff00;
+         }
+    </style>
+</head>
+<body>
+    <div id="grid-contanier">
+        <div id="grid-items1">Item-1</div>
+        <div id="grid-items2">Item-2</div>
+        <div id="grid-items3">Item-3</div>
+        <div id="grid-items4">Item-4</div>
+        <div id="grid-items5">item-5</div>
+        <div id="grid-items6">item-6</div>
+    </div>
+    
+</body>
+</html>
