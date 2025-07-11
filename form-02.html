@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-image: url(form-03.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+      }
+      div {
+        width: 70%;
+        /* background-color: aqua; */
+      }
+      .form-contanier {
+        background-color: black;
+        color: white;
+        display: grid;
+        width: 50%;
+        grid-template-columns: repeat(2, 60%);
+      }
+      .form-contanier img {
+        grid-row: 1/11;
+      }
+      .form-contanier label {
+        font-size: 1.1em;
+        color: white;
+        margin: 10px;
+      }
+      .form-contanier input[type="text"],
+      .form-contanier input[type="password"],
+      .form-contanier textarea,
+      select
+       {
+        opacity: 0.4;
+        width:50%;
+        /* display: block; */
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      button{
+        width: 35%;
+        margin: 10px;
+        border-radius: 15px;
+        background-color: rgb(6, 237, 6);
+        color: white;
+        border: none;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <section>
+      
+        <form action="" class="form-contanier">
+          <img
+            src="developer.jpg"
+            alt=""
+            style="width: 380px; height: 580px; display: inline"
+          >
+          <h2>Registation Form</h2>
+          <label for="username">Username :</label>
+          <input type="text" id="text" placeholder="Enter your Username" />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter Your Comment"
+          ></textarea>
+          <label for="Choose city">Choose City:</label>
+          <select name="city" id="city">
+            <option value="Select city">Select city</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Cuddalore">Cuddalore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Panruti">Panruti</option>
+          </select>
+          <button type="button">Login</button>
+        </form>
+    
+    </section>
+  </body>
+</html>

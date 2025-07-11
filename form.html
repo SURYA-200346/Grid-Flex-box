@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .navbar {
+        .form-section {
             display: flex;
             flex-wrap: wrap;
             width: 95%;
@@ -37,7 +37,7 @@
         }
 
         .form-contanier input[type=text],
-        .form-contanier input[type=password] {
+        .form-contanier input[type=password],.form-contanier textarea  {
 
             opacity: 0.6;
             width: 90%;
@@ -48,7 +48,7 @@
         }
 
 
-        .form-contanier textarea {
+        /* .form-contanier textarea {
             display: block;
             padding: 15px;
             margin: 10px;
@@ -56,10 +56,10 @@
             border-radius: 5px;
             border: none;
             opacity: 0.6;
-        }
+        } */
 
         .form-contanier select {
-            display: block;
+            /* display: block; */
             margin: 10px;
             padding: 15px;
             width: 100%;
@@ -88,7 +88,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+  <section class="form-section">
         <form action="" class="form-contanier">
             <label for="username">Username :</label>
             <input type="text" id="text" placeholder="Enter your Username">
@@ -96,8 +96,8 @@
             <input type="password" id="password" placeholder="Enter your password">
             <label for="message">Message:</label>
             <textarea name="message" id="message" placeholder="Enter Your Comment"></textarea>
-            <label for="cites">Choose City:</label>
-            <select name="cites" id="cites">
+            <label for="Choose city">Choose City:</label>
+            <select name="city" id="city">
                 <option value="Select city">Select city</option>
                 <option value="Chennai">Chennai</option>
                 <option value="Cuddalore">Cuddalore</option>
@@ -107,7 +107,7 @@
             <button type="button">Login</button>
             <button type="reset">Reset</button>
         </form>
-    </nav>
+   </section>
 </body>
 
 </html>
